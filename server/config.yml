@@ -1,0 +1,15 @@
+run:
+  debug: 1                  # 0 = False | 1 = True
+  port: 5000
+
+databases:
+  mysql_database:
+    cnxn: DRIVER={?}; SERVER=?; DATABASE=?; UID=?; PASSWORD=?;
+    driver: MySQL ODBC 8.0 ANSI Driver
+    server: localhost
+    db_name: results
+    uid: root
+    password: root
+
+model:
+  path: models\classifier.pickle
